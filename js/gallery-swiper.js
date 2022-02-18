@@ -1,5 +1,4 @@
-const swiper = new Swiper('.swiper', {
-
+const gallerySwiper = new Swiper('.gallery__swiper', {
 
   loop: false,
   autoHeight: false,
@@ -11,13 +10,13 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 30,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: '.gallery__swiper-pagination',
     type: 'fraction',
   },
 
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.gallery__swiper-button-next',
+    prevEl: '.gallery__swiper-button-prev',
   },
 
   breakpoints: {
