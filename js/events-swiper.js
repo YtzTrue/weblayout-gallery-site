@@ -11,7 +11,7 @@ const eventsSwiper = new Swiper('.events__swiper', {
 
   pagination: {
     el: '.events__swiper-pagination',
-    type: 'fraction',
+    type: 'bullets',
   },
 
   navigation: {
