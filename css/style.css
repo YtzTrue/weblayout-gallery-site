@@ -1522,6 +1522,247 @@ button {
   display: none;
 }
 
+/* projects */
+
+.projects {
+  margin-bottom: 80px;
+}
+
+.projects__title {
+  margin-bottom: 15px;
+}
+
+.projects__text {
+  position: relative;
+  margin-bottom: 18px;
+  max-width: 1076px;
+}
+
+.tooltip {
+  position: relative;
+  margin-right: 3px;
+  line-height: 1px;
+  font-size: 0px;
+  vertical-align: text-bottom;
+}
+
+.tooltip__btn {
+  border: none;
+  padding: 0;
+  background-color: #000;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: 1px solid var(--color_purple);
+  transition: background-color var(--fast);
+}
+
+.tooltip__txt {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  padding: 10px 15px;
+  width: max-content;
+  max-width: 260px;
+  background-color: var(--color_purple);
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: opacity var(--fast),visibility var(--fast);
+}
+
+.tooltip__txt::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 7.5px 0 7.5px;
+  border-color: var(--color_purple) transparent transparent transparent;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%);
+  transition: opacity var(--fast),visibility var(--fast);
+}
+
+.tooltip__btn svg path {
+  transition: fill var(--fast);
+}
+
+.tooltip__btn:hover svg path,
+.tooltip__btn:focus svg path {
+  fill: #D1A9F0;
+}
+
+.tooltip__btn:active {
+  background-color: transparent;
+}
+
+.tooltip__btn:active svg path {
+  fill: var(--color_purple);
+}
+
+.tooltip__btn:hover .tooltip__txt::before,
+.tooltip__btn:focus .tooltip__txt::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip__btn:hover .tooltip__txt,
+.tooltip__btn:focus .tooltip__txt {
+  opacity: 1;
+  visibility: visible;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.projects__text-link {
+  color: var(--color_purple);
+  transition: color var(--fast), border var(--fast), background-color var(--fast);
+}
+
+.projects__text-link_res_768 {
+  display: none;
+}
+
+.projects__text-link_res_320 {
+  display: none;
+}
+
+.projects__text-link:hover {
+  text-decoration: underline;
+  color: var(--color_purple);
+}
+
+.projects__text-link:focus {
+  color: var(--color_white);
+  background-color: var(--color_purple);
+  border: none;
+  outline: none;
+}
+
+.projects__text-link:active {
+  text-decoration: underline;
+  color: var(--color_purple_deep);
+  border-color: unset;
+}
+
+.projects__subtitle {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.projects__swiper {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projects__slider {
+  width: calc(1450 / 1600 * 100%);
+  overflow: hidden;
+}
+
+.projects__swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 60px;
+  height: 150px;
+  border: 1px solid #cacaca;
+}
+
+.projects__swiper-slide:focus {
+  outline: none;
+  border-color: var(--color_purple);
+}
+
+.projects__swiper-img {
+  max-width: 100%;
+  filter: grayscale(1);
+  opacity: .4;
+  transition-property: filter, opacity;
+  transition-duration: .3s;
+}
+
+.projects__swiper-slide:hover .projects__swiper-img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.projects__swiper-button-prev, .projects__swiper-button-next {
+  position: relative;
+  margin-top: 0;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  transition: opacity var(--fast);
+}
+
+.projects__swiper-button-prev {
+  margin-right: 23px;
+  left: 0;
+}
+
+.projects__swiper-button-next {
+  margin-left: 23px;
+  right: 0;
+}
+
+.projects__swiper-button-next:after, .projects__swiper-button-prev:after {
+  position: absolute;
+  font-size: 12px;
+  color: #000;
+}
+
+.projects__swiper-button-next::before, .projects__swiper-button-prev::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ececec;
+  border-radius: 30px;
+  transition: background-color var(--fast), border var(--fast);
+}
+
+.projects__swiper-button-next:hover::before,
+.projects__swiper-button-prev:hover::before {
+  background-color: #d1a9f0;
+}
+
+.projects__swiper-button-next:focus::before,
+.projects__swiper-button-prev:focus::before {
+  outline: 3px solid var(--color_purple);
+  outline-offset: -3px;
+}
+
+.projects__swiper-button-next:active::before,
+.projects__swiper-button-prev:active::before {
+  outline: 3px solid var(--color_purple);
+  outline-offset: -3px;
+  background-color: #d1a9f0;
+}
+
+
 @media (max-width: 1600px) {
 
   /* header */
@@ -1889,6 +2130,26 @@ button {
     line-height: 1;
   }
 
+  /* projects */
+
+  .projects__swiper-slide {
+    height: 128px;
+  }
+
+  .tooltip__btn:active,
+  .tooltip__btn:focus  {
+    background: url(../img/i-Тултип.png) no-repeat;
+    background-size: 100%;
+  }
+
+  .tooltip__btn:active svg path,
+  .tooltip__btn:focus svg path {
+    fill: inherit;
+  }
+
+  .tooltip__txt::before {
+    display: none;
+  }
 
 }
 
@@ -1986,6 +2247,10 @@ button {
 
   /* events */
 
+  .events {
+    margin-bottom: 77px;
+  }
+
   .article__content {
     padding: 14px 34px 56px 34px;
   }
@@ -1996,6 +2261,38 @@ button {
 
   .article__text {
     margin-bottom: 30px;
+  }
+
+  /* projects */
+
+  .projects__text-link_res_1024 {
+    display: none;
+  }
+
+  .projects__text-link_res_768 {
+    display: inline-block;
+  }
+
+  .projects__text {
+    margin-bottom: 28px;
+    max-width: 660px;
+  }
+
+  .projects__subtitle {
+    margin-bottom: 29px;
+  }
+
+  .projects__swiper-slide {
+    padding: 32px 27px;
+    height: 106px;
+  }
+
+  .projects__swiper-button-prev {
+    left: 3px;
+  }
+
+  .projects__swiper-button-next {
+    right: 3px;
   }
 
 
@@ -2251,6 +2548,10 @@ button {
 
   /* events */
 
+  .events {
+    margin-bottom: 48px;
+  }
+
   .article__bacground {
     background-position: center 25%;
   }
@@ -2280,6 +2581,33 @@ button {
 
   .events__swiper {
     padding-bottom: 31px;
+  }
+
+  /* projects */
+
+  .projects__text {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .projects__text-link_res_768 {
+    display: none;
+  }
+
+  .projects__text-link_res_320 {
+    display: inline-block;
+  }
+
+  .projects__subtitle {
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .projects__swiper-slide {
+    padding: 32px 46px;
+    height: 65px;
   }
 
 }
