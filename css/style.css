@@ -2721,6 +2721,7 @@ button {
   }
 
   .hero__container {
+    position: relative;
     padding: 0;
   }
 
