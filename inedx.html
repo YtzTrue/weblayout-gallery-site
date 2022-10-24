@@ -279,7 +279,35 @@
 
   <main>
     <section class="hero" id="hero">
-      <div class="container">
+      <div class="container hero__container">
+        <div class="swiper hero__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero__swiper-slide">
+              <picture>
+                <!-- <source srcset="img/article__img_number_2-1024.jpg" media="(max-width: 640px)"> -->
+                <source srcset="img/Hero1-768.jpg" media="(max-width: 1024px)">
+                <source srcset="img/Hero1-1024.jpg" media="(max-width: 1700px)">
+                <img src="img/Hero1-1920.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide hero__swiper-slide">
+              <picture>
+                <!-- <source srcset="img/article__img_number_2-1024.jpg" media="(max-width: 640px)"> -->
+                <source srcset="img/Hero2-768.jpg" media="(max-width: 1024px)">
+                <source srcset="img/Hero2-1024.jpg" media="(max-width: 1700px)">
+                <img src="img/Hero2-1920.jpg">
+              </picture>
+            </div>
+            <div class="swiper-slide hero__swiper-slide">
+              <picture>
+                <!-- <source srcset="img/article__img_number_2-1024.jpg" media="(max-width: 640px)"> -->
+                <source srcset="img/Hero3-768.jpg" media="(max-width: 1024px)">
+                <source srcset="img/Hero3-1024.jpg" media="(max-width: 1700px)">
+                <img src="img/Hero3-1920.jpg">
+              </picture>
+            </div>
+          </div>
+        </div>
         <div class="hero-content">
           <h1 class="hero-content__title">Прикоснитесь к&nbsp;прекрасному</h1>
           <p class="hero-content__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
@@ -1204,38 +1232,38 @@
         <p class="section-text projects__text">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
           <span class="tooltip">
-            <button class="tooltip__btn" aria-describedby="tooltip_1">
+            <button class="tooltip__btn" id="tooltip_1">
               <svg class="marker" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#fff"></path>
               </svg>
-              <span class="tooltip__txt" id="tooltip_1" role="tooltip">
+              <!-- <span class="tooltip__txt" id="tooltip_1" role="tooltip">
                 <span class="visually-hidden">Тултип:</span>
                 Пример современных тенденций - современная методология разработки
-              </span>
+              </span> -->
             </button>
           </span>
           обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены
           <span class="tooltip">
-            <button class="tooltip__btn" aria-describedby="tooltip_2">
+            <button class="tooltip__btn" id="tooltip_2">
               <svg class="marker" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#fff"></path>
               </svg>
-              <span class="tooltip__txt" id="tooltip_2" role="tooltip">
+              <!-- <span class="tooltip__txt" id="tooltip_2" role="tooltip">
                 <span class="visually-hidden">Тултип:</span>
                 Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции
-              </span>
+              </span> -->
             </button>
           </span>
           исключительно в разрезе маркетинговых и финансовых
           <span class="tooltip">
-            <button class="tooltip__btn" aria-describedby="tooltip_3">
+            <button class="tooltip__btn" id="tooltip_3">
               <svg class="marker" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#fff"></path>
               </svg>
-              <span class="tooltip__txt" id="tooltip_3" role="tooltip">
+              <!-- <span class="tooltip__txt" id="tooltip_3" role="tooltip">
                 <span class="visually-hidden">Тултип:</span>
                 В стремлении повысить качество
-              </span>
+              </span> -->
             </button>
           </span>
           предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
@@ -1358,20 +1386,21 @@
 <script src="/js/choices.min.js"></script>
 <script src="/js/selector.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-<script src="/js/gallery-swiper.js"></script>
+<script src="/js/swipers.js"></script>
 <script src="/js/tabs.js"></script>
 <script src="/js/accordion.js"></script>
 <script> new Accordion('.accordion-container', {
   openOnInit: [0]
 });
 </script>
-<script src="/js/events-swiper.js"></script>
-<script src="/js/projects-swiper.js"></script>
 <script src="/js/inputmask.min.js"></script>
 <script src="/js/just-validate.min.js"></script>
 <script src="/js/form.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 <script src="/js/map.js"></script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<script src="/js/tippy.js"></script>
 
 </body>
 </html>
